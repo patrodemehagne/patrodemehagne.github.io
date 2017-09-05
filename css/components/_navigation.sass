@@ -1,0 +1,101 @@
+//.nav-menu > ul
+//  display: flex
+//
+//.nav-menu a
+//  color: rgba(255,255,255,0.5)
+//  text-decoration: none
+//  margin: 0 15px
+//  transition:
+//    property: color, border-color
+//    duration: 100ms
+//    timing-function: linear
+//  &:hover
+//    color: $white
+//
+//.page-actuelle
+//  color: $white !important
+//
+//// Media queries
+//@media screen and (max-width: 768px)
+//  .nav-menu
+//    display: none
+//    width: 100%
+//    ul
+//      flex-direction: column
+//      li
+//        text-align: center
+//        width: 100%
+//        padding: 20px 0
+//
+//@media screen and (min-width: 769px)
+//  .programme-nav
+//    font-weight: bold
+//    text-transform: uppercase
+//    border: 2px solid $white-tr
+//    border-radius: 50px
+//    padding: 13px 15px
+//    &:hover
+//      border-color: $white
+
+.logo
+  img
+    height: 60px
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: $width
+  border-bottom: 2px solid $white-tr
+  height: 70px
+  ul
+    display: flex
+    li a
+      color: $white-tr
+      text-decoration: none
+      cursor: pointer
+      margin: 0 15px
+      transition:
+        property: color, border-color
+        duration: 100ms
+        timing-function: linear
+
+      &:hover
+        color: $white
+
+
+
+
+.programme-nav-btn
+  text-transform: uppercase
+  font-weight: bold
+  //color: $white !important
+  border: 2px solid $white-tr
+  padding: 10px 15px
+  border-radius: 20px
+  &:hover
+    border-color: $white
+
+.page-actuelle
+  color: $white !important
+  padding-bottom: 5px
+  border-bottom: 1px solid $vert-cl
+
+.programme-nav-btn-actuelle
+  text-transform: uppercase
+  font-weight: bold
+  color: $white !important
+  border: 2px solid $white
+  padding: 10px 15px
+  border-radius: 20px
+
+
+
+
+
+
+
+
+
+
+
