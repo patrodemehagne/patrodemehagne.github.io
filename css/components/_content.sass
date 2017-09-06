@@ -10,6 +10,7 @@
 
 .patro
   display: flex
+  flex-direction: column
   flex-wrap: wrap
   // width: $width
 
@@ -28,13 +29,21 @@
       height: 3px
       display: block
       margin: 20px auto
+.card-container
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+@media all and (min-width: 1140px)
+  .card-container
+    flex-basis: 100%
+    width: 1140px
 
 .card
   background-color: $white
   border-radius: 5px
   padding: 20px
   margin: 10px 20px
-
   h3
     font:
       size: 1.375em
@@ -44,14 +53,9 @@
     line-height: 1.13636364em
     font-size: 1em
 
-
-
-
-.card-container
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-around
-
+@media all and (min-width: 47em)
+  .card
+    width: calc(50% - 40px)
 .card-id
   display: flex
   flex-direction: column

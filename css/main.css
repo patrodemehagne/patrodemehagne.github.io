@@ -156,7 +156,7 @@ header {
   margin-bottom: 40px;
 }
 
-@media all and (min-width: 50em) {
+@media all and (min-width: 47em) {
   .hero {
     top: 32vh;
   }
@@ -236,6 +236,21 @@ header {
   display: none;
 }
 
+@media all and (min-width: 47em) {
+  .navbar-container {
+    width: 90%;
+  }
+  .nav-menu {
+    display: block;
+  }
+}
+
+@media all and (min-width: 47em) {
+  .navbar-container {
+    width: 1140px;
+  }
+}
+
 .programme-nav-btn {
   text-transform: uppercase;
   font-weight: bold;
@@ -273,6 +288,7 @@ header {
 
 .patro {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -294,6 +310,20 @@ header {
   margin: 20px auto;
 }
 
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media all and (min-width: 1140px) {
+  .card-container {
+    flex-basis: 100%;
+    width: 1140px;
+  }
+}
+
 .card {
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -312,10 +342,10 @@ header {
   font-size: 1em;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+@media all and (min-width: 47em) {
+  .card {
+    width: calc(50% - 40px);
+  }
 }
 
 .card-id {
@@ -469,14 +499,15 @@ header {
   display: flex;
   height: 75px;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-2nd-part {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-2nd-part p {
+  display: none;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -487,6 +518,22 @@ header {
 
 .icon {
   padding-right: 10px;
+}
+
+@media all and (min-width: 47em) {
+  .footer-container {
+    height: 175px;
+  }
+  .footer-nav-container {
+    display: flex;
+  }
+  .footer-2nd-part {
+    width: 90%;
+    justify-content: space-between;
+  }
+  .footer-2nd-part p {
+    display: block;
+  }
 }
 
 .programme-content-container {

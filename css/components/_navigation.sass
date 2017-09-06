@@ -6,7 +6,6 @@
   display: flex
   justify-content: space-between
   align-items: center
-  // width: $width
   border-bottom: 1px solid $white-tr
   height: 70px
   ul
@@ -27,11 +26,18 @@
 
 .nav-menu
   display: none
-
+@media all and (min-width: 47em)
+  .navbar-container
+    width: 90%
+  .nav-menu
+    display: block
+@media all and (min-width: 47em)
+  .navbar-container
+    width: 1140px
+    
 .programme-nav-btn
   text-transform: uppercase
   font-weight: bold
-  //color: $white !important
   border: 2px solid $white-tr
   padding: 10px 15px
   border-radius: 20px

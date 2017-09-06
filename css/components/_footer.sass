@@ -26,19 +26,30 @@
   display: flex
   height: 75px
   align-items: center
-  // justify-content: center
+  justify-content: center
 .footer-2nd-part
   display: flex
-  justify-content: space-between
   p
+    display: none
     color: $white-tr
   a
+    
     text-decoration: none
     color: #3B5998
 .icon
   padding-right: 10px
 
-
+@media all and (min-width: 47em)
+  .footer-container
+    height: 175px
+  .footer-nav-container
+    display: flex
+  .footer-2nd-part
+    width: 90%
+    justify-content: space-between
+    p
+      display: block
+      
 
 
 
