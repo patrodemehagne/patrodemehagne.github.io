@@ -1,9 +1,9 @@
 .footer-container
-  height: 175px
+  height: 75px
   background-color: $darkgrey
 .footer-nav-container
   height: 100px
-  display: flex
+  display: none
   justify-content: center
   align-items: center
   border-bottom: 1px solid $white-tr
@@ -29,17 +29,27 @@
   justify-content: center
 .footer-2nd-part
   display: flex
-  justify-content: space-between
-  width: $width
   p
+    display: none
     color: $white-tr
   a
+    
     text-decoration: none
     color: #3B5998
 .icon
   padding-right: 10px
 
-
+@media all and (min-width: 47em)
+  .footer-container
+    height: 175px
+  .footer-nav-container
+    display: flex
+  .footer-2nd-part
+    width: 90%
+    justify-content: space-between
+    p
+      display: block
+      
 
 
 
