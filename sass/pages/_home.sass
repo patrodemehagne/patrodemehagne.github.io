@@ -1,0 +1,202 @@
+// Hero
+
+.landing-page
+  background:
+    image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/background.jpg")
+    position: center center
+    repeat: no-repeat
+    size: cover
+    attachment: fixed
+.navbar
+  background-color: #212121
+  text-align: center
+a.navbar-item
+  &.is-active
+    background: none
+.navbar-burger span, .navbar-burger .is-active span
+  background-color: #ffffff
+.hero-body 
+  .title
+    font:
+      size: 2em //4em
+      weight: 300
+  .subtitle
+    font-size: 1em //1.8em
+    color: rgba(255,255,255,0.6)
+    font:
+      style: italic
+      weight: 300
+    margin-bottom: 40px
+.hero-foot
+  a
+    color: rgba(255,255,255,0.6)
+    position: relative
+    bottom: 10px
+    &::after
+      content: ''
+      background:
+        image: url("img/chevron-down.svg")
+        repeat: no-repeat
+      position: absolute
+      // bottom: -4px
+      width: 24px
+      height: 24px
+.programme-hero-btn
+  text-decoration: none
+  color: $white
+  padding: 20px
+  border: 1px solid $white
+  border-radius: 50px
+  transition:
+    property: color, background-color
+    duration: 200ms
+    timing-function: linear
+  &:hover
+    color: $black
+    background-color: $white
+
+// Le Patro, c'est quoi
+
+.section-quoi
+  background-color: #212121
+  .is-parent
+    background-color: #ffffff
+    border-radius: 10px
+    margin: 10px
+    padding: 1.2rem
+  &,.subtitle
+    color: #000000
+
+.section-quoi, .section-qui
+  .box
+    border: 1px solid #E8B563
+    box-shadow: none
+
+  .title
+    color: #ffffff
+    font:
+      weight: 400
+      size: 1.625em
+    &::after
+      content: ''
+      background-color: #939393
+      width: 50px
+      height: 3px
+      display: block
+      margin: 20px auto
+
+
+// Le Patro, c'est qui
+
+.section-qui
+  background: linear-gradient(to bottom, #212121 0%, #212121 82px, #ffffff 82px, #ffffff 100%)
+  .card-content
+    padding: 0
+    
+  .card
+    flex-basis: auto
+    flex-grow: 0
+    width: 300px
+    height: 400px
+    margin: 20px auto
+    img
+      width: 200px
+      height: 200px
+      border-radius: 100px
+    h4
+      color: #000000
+      font:
+        size: 28px
+        weight: 500
+      margin-bottom: 5px
+    h5
+      color: #858585
+      margin-bottom: 25px
+
+    .mail-address
+      color: #000000
+      text-decoration: none
+
+    p
+      color: #000000
+      margin-bottom: 5px
+      font-weight: 500
+      font-size: 1em
+
+.qui-animateur-section
+  p
+    margin-bottom: 20px
+.equipe-btn
+  background-color: #2ECC71
+  color: #ffffff
+  text-decoration: none
+  padding: 15px 25px
+  width: 150px
+  height: 50px
+  border-radius: 25px
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+  &:hover
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22)
+  
+
+.card-1, .card-2
+  background: none
+
+// Carte Google Maps
+
+.map
+  margin-bottom: 30px
+  
+  width: 100%
+
+  min-height: 400px
+
+#map
+  height: 400px
+
+// Contact
+
+.contact
+  .subtitle
+    margin-top: 20px
+    margin-bottom: 10px
+    font:
+      weight: 700
+      size: 16px
+    color: #4a4a4a
+    text-transform: uppercase
+
+// Footer
+.footer .breadcrumb ul
+  flex-direction: column
+  li::before
+    content: none
+  a:hover
+    color: #ffffff
+.footer
+  .level
+    text-align: center
+  .level-left
+    margin-bottom: 10px
+  .level-right
+    color: #3B5998
+    
+.icon
+  padding-right: 10px
+// Media query for desktop
+
+@media screen and (min-width: 1008px)
+  .navbar-homepage
+    background: none
+  .hero-body
+    .title
+      font-size: 4em
+    .subtitle
+      font-size: 1.8em
+@media screen and (min-width: 768px)
+  .section-qui
+    background: linear-gradient(to bottom, #212121 0%, #212121 33%, #ffffff 33%, #ffffff 100%)
+  .footer .breadcrumb ul
+    flex-direction: row

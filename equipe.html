@@ -1,51 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Patro de Mehagne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equipe d'animation - Patro de Mehagne</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/2c8b74f529.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
-<header>
-    <div class="navbar-container nav-tr">
-        <div class="logo"><a href="index"><img src="img/logo-patro-de-mehagne.svg" alt=""></a></div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a class="page-actuelle" href="equipe.html">Équipes d'animation</a></li>
-                <li><a href="photos.html">Photos</a></li>
-                <li><a class="programme-nav-btn" href="programmes.html">Programmes</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<div class="programme-content-container">
-    <section class="programme-content">
-        <h2>Cette page est en cours de maintenance.</h2>
-    </section>
-</div>
-<div class="footer-container">
-    <footer>
-        <div class="footer-nav-container">
-            <nav>
+    <header>
+        <div class="container">
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img src="img/logo-patro-de-mehagne.svg" alt="Patro de Mehagne" width="50" height="50">
+                    </a>
+                    <div class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-end">
+                        <a href="index.html" class="navbar-item is-active">Accueil</a>
+                        <a href="equipe.html" class="navbar-item">Équipe d'animation</a>
+                        <a href="photos.html" class="navbar-item">Photos</a>
+                        <a href="index.html#contact" class="navbar-item">Contact</a>
+                        <a href="programmes.html" class="navbar-item">Programmes</a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- <div class="container navbar-animateur">
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a class="page-actuelle" href="equipe.html">Équipes d'animation</a></li>
+                    <li><a href="#benjamines">Benjamines</a></li>
+                    <li><a href="#benjamins">Benjamins</a></li>
+                    <li><a href="#étincelles">Étincelles</a></li>
+                    <li><a href="#chevaliers">Chevaliers</a></li>
+                    <li><a href="#alpines">Alpines</a></li>
+                    <li><a href="#conquérants">Conquérants</a></li>
+                    <li><a href="#grands">Grandes et Grands</a></li>
+                </ul>
+            </nav>
+        </div> -->
+    </header>
+    <section class="section-benjamines">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Benjamines</h2>
+                <h4>Filles de 6 à 9 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Benjamines/Justine Bierlier.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Justine Bierlier</h5>
+                        <h6 class="animateur-numero">0483/03 36 60</h6>
+                        <h6>Chemises et foulards</h6>
+                        <h6>Décors</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Benjamines/Sophie Delbouille.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Sophie Delbouille</h5>
+                        <h6 class="animateur-numero">0491/32 13 09</h6>
+                        <h6>Chemises et foulards</h6>
+                        <h6>Matos bricolage</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-benjamins">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Benjamins</h2>
+                <h4>Garçons de 6 à 9 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Benjamins/Arthur Radermacher.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Arthur Radermacher</h5>
+                        <h6 class="animateur-numero">0491/50 19 24</h6>
+                        <h6>Entretien extérieur</h6>
+                        <h6>Matos sport et outils</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Benjamins/Romain Colback.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Romain Colback</h5>
+                        <h6 class="animateur-numero">0498/30 95 16</h6>
+                        <h6>Programme</h6>
+                        <h6>Cuisine et bassine</h6>
+                        <h6>Entretien extérieur</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Benjamins/Zoé Devos.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Zoé Devos</h5>
+                        <h6 class="animateur-numero">0499/73 43 53</h6>
+                        <h6>Endroit de camp</h6>
+                        <h6>Photographe</h6>
+                        <h6>Programme</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-étincelles">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Étincelles</h2>
+                <h4>Filles de 9 à 12 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Etincelles/Justin Jeangette.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Justin Jeangette</h5>
+                        <h6 class="animateur-numero">0484/56 83 80</h6>
+                        <h6>Entretien extérieur</h6>
+                        <h6>Matos sport et outils</h6>
+                        <h6>Poubelle</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Etincelles/Odile Lambert.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Odile Lambert</h5>
+                        <h6 class="animateur-numero">0497/78 57 33</h6>
+                        <h6>Cuisine et bassine</h6>
+                        <h6>Lien avec les parents<br> et anciens</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Etincelles/Paul Collin.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Paul Collin</h5>
+                        <h6 class="animateur-numero">0474/06 39 86</h6>
+                        <h6>Entretien extérieur</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-chevaliers">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Chevaliers</h2>
+                <h4>Garçons de 9 à 12 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Chevaliers/Léa Collin.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Léa Collin</h5>
+                        <h6 class="animateur-numero">0475/33 97 38</h6>
+                        <h6>Programme</h6>
+                        <h6>Webmaster</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Chevaliers/Sarah Absil.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Sarah Absil</h5>
+                        <h6 class="animateur-numero">0487/44 18 61</h6>
+                        <h6>Matos bricolage</h6>
+                        <h6>Secrétaire</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Chevaliers/Loïc Thomas.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Loïc Thomas</h5>
+                        <h6 class="animateur-numero">0497/81 68 25</h6>
+                        <h6>Matos sport et outils</h6>
+                        <h6>Poubelle</h6>
+                        <h6>Responsable brasseur</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-alpines">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Alpines</h2>
+                <h4>Filles de 12 à 15 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Alpines/Pauline Bassleer.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Pauline Bassleer</h5>
+                        <h6 class="animateur-numero">0478/95 50 24</h6>
+                        <h6>Listing et étiquettes</h6>
+                        <h6>Matos bricolage</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Alpines/Elsa Dauby.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Elsa Dauby</h5>
+                        <h6 class="animateur-numero">0489/54 90 68</h6>
+                        <h6>Endroit de camp</h6>
+                        <h6>Tournante</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Alpines/Iris Delruelle.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Iris Delruelle</h5>
+                        <h6 class="animateur-numero">0472/22 43 46</h6>
+                        <h6>Infirmerie</h6>
+                        <h6>Décors</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Alpines/Emeline Zotto.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Emeline Zotto</h5>
+                        <h6 class="animateur-numero">0493/20 64 63</h6>
+                        <h6>Carte IGN</h6>
+                        <h6>Décors</h6>
+                        <h6>Photographe</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-conquérants">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Conquérants</h2>
+                <h4>Garçons de 12 à 15 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Conquérants/Antoine Horevoets.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Antoine Horevoets</h5>
+                        <h6 class="animateur-numero">0497/36 10 29</h6>
+                        <h6>Trésorier</h6>
+                        <h6>Responsable brasseurs</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Conquérants/Chloé Lerusse.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Chloé Lerusse</h5>
+                        <h6 class="animateur-numero">0477/06 84 93</h6>
+                        <h6>Infirmerie</h6>
+                        <h6>Listing et étiquettes</h6>
+                        <h6>Tournante</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Conquérants/Nicolas Radermacher.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Nicolas Radermacher</h5>
+                        <h6 class="animateur-numero">0492/70 75 70</h6>
+                        <h6>Entretien extérieur</h6>
+                        <h6>Responsable brasseur</h6>
+                        <h6>Sono</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Conquérants/Victor Regnier.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Victor Regnier</h5>
+                        <h6 class="animateur-numero">0491/74 67 35</h6>
+                        <h6>Entretien extérieur</h6>
+                        <h6>Produits d'entretien</h6>
+                        <h6>Responsable brasseur</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-grands">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>G&G's</h2>
+                <h4>Mixtes de 15 à 17 ans</h4>
+            </div>
+            <div class="section-images">
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Grands/Nicolas Gruslin.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Nicolas Gruslin</h5>
+                        <h6 class="animateur-numero">0491/11 56 69</h6>
+                        <h6>Endroit de camp</h6>
+                        <h6>Sono</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Grands/Thomas Leclère.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Thomas Leclère</h5>
+                        <h6 class="animateur-numero">0470/39 82 66</h6>
+                        <h6>Infirmerie</h6>
+                        <h6>Webmaster</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Grands/Emy Docquier.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Emy Docquier</h5>
+                        <h6 class="animateur-numero">0477/25 99 78</h6>
+                        <h6>Présidence</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Grands/Charline Espreux.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Charline Espreux</h5>
+                        <h6 class="animateur-numero">0479/96 30 92</h6>
+                        <h6>Endroit de camp</h6>
+                        <h6>Lien avec les parents<br> et anciens</h6>
+                        <h6>Photographe</h6>
+                        <h6>Produits d'entretien</h6>
+                    </div>
+                </div>
+                <div class="animateur">
+                    <img class="img-animateur" src="img/Equipe-animation/Grands/Poulet.jpg" alt="">
+                    <div class="coord-animateur">
+                        <h5>Simon Polet</h5>
+                        <h6 class="animateur-numero">0474/43 49 14</h6>
+                        <h6>Carte IGN</h6>
+                        <h6>Extincteurs et chauffage</h6>
+                        <h6>Tournante</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                <ul>
+                    <li><a class="is-active" href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="equipe.html">Équipe d'animation</a></li>
                     <li><a href="photos.html">Photos</a></li>
+                    <li><a href="index.html#contact" class="navbar-item">Contact</a></li>
                     <li><a href="programmes.html">Programmes</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="footer-2nd-part-container">
-            <div class="footer-2nd-part">
-                <p>© 2017 Patro de Mehagne</p>
-                <a href="https://www.facebook.com/PatroDeMehagne/"><span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>PatroDeMehagne</a>
+            <div class="level">
+                <p class="level-left">© 2017 Patro de Mehagne</p>
+                <a class="level-right" href="https://www.facebook.com/PatroDeMehagne/">
+                    <div class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>PatroDeMehagne
+                </a>
             </div>
         </div>
     </footer>
-</div>
 </body>
+
 </html>

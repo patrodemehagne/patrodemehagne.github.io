@@ -3,54 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Patro de Mehagne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programmes - Patro de Mehagne</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/2c8b74f529.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="navbar-container nav-tr">
-            <div class="logo"><a href="index.html"><img src="img/logo-patro-de-mehagne.svg" alt=""></a></div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="equipe.html">Équipes d'animation</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a class="programme-nav-btn-actuelle" href="programmes.html">Programmes</a></li>
-                </ul>
+        <div class="container">
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img src="img/logo-patro-de-mehagne.svg" alt="Patro de Mehagne" width="50" height="50">
+                    </a>
+                    <div class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-end">
+                        <a href="index.html" class="navbar-item is-active">Accueil</a>
+                        <a href="equipe.html" class="navbar-item">Équipe d'animation</a>
+                        <a href="photos.html" class="navbar-item">Photos</a>
+                        <a href="index.html#contact" class="navbar-item">Contact</a>
+                        <a href="programmes.html" class="navbar-item">Programmes</a>
+
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     <div class="programme-content-container">
         <section class="programme-content">
             <h2>Le programme du mois de septembre est maintenant disponible !</h2>
-            <h3>La rentrée Patro a lieu le samedi 16 septembre, de 13h30 à 17h15. Les inscriptions seront possibles ce jour.</h3>
+            <div class="fiche-sante"><a href="programmes/fiche-sante.pdf">Fiche santé</a></div>
             <a class="programmes-btn" href="programmes/programme-septembre2017.pdf">Voir le programme</a>
         </section>
     </div>
-    <div class="footer-container">
-        <footer>
-            <div class="footer-nav-container">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="equipe.html">Équipes d'animation</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                        <li><a class="page-actuelle" href="programmes.html">Programmes</a></li>
-                    </ul>
-                </nav>
+    <footer class="footer">
+        <div class="container">
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                <ul>
+                    <li><a class="is-active" href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="equipe.html">Équipe d'animation</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="index.html#contact" class="navbar-item">Contact</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                </ul>
+            </nav>
+            <div class="level">
+                <p class="level-left">© 2017 Patro de Mehagne</p>
+                <a class="level-right" href="https://www.facebook.com/PatroDeMehagne/">
+                    <div class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>PatroDeMehagne
+                </a>
             </div>
-            <div class="footer-2nd-part-container">
-                <div class="footer-2nd-part">
-                    <p>© 2017 Patro de Mehagne</p>
-                    <a href="https://www.facebook.com/PatroDeMehagne/"><span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>PatroDeMehagne</a>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>

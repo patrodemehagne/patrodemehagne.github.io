@@ -1,134 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name='viewport'
-    content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Patro de Mehagne</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/2c8b74f529.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
-    <header id="landing-page">
-        <div class="navbar-container nav-tr">
-            <div class="logo"><a href="#"><img src="img/logo-patro-de-mehagne.svg" alt=""></a></div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a class="page-actuelle" href="index.html">Accueil</a></li>
-                    <li><a href="equipe.html">Équipes d'animation</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a class="programme-nav-btn" href="programmes.html">Programmes</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="hero">
-            <h1>Bienvenue au Patro de Mehagne</h1>
-            <h3>Rentrée le 16 septembre de 13h30 à 17h15 !</h3>
-            <a class="programme-hero-btn" href="programmes.html">Programme du mois</a>
+    <section class="hero is-fullheight landing-page">
+        <div class="hero-head">
+            <div class="container">
+                <nav class="navbar is-transparent navbar-homepage">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html">
+                            <img src="img/logo-patro-de-mehagne.svg" alt="Patro de Mehagne" width="50" height="50">
+                        </a>
+                        <div class="navbar-burger burger" data-target="navMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="navbar-menu" id="navMenu">
+                        <div class="navbar-end">
+                            <a href="index.html" class="navbar-item is-active">Accueil</a>
+                            <a href="equipe.html" class="navbar-item">Équipe d'animation</a>
+                            <a href="photos.html" class="navbar-item">Photos</a>
+                            <a href="#contact" class="navbar-item">Contact</a>
+                            <a href="programmes.html" class="navbar-item">Programmes</a>
 
-        </div>
-        <a class="read-more-btn" href="#quoi">Découvrir le Patro</a>
-    </header>
-    <div class="content-container">
-        <section class="patro" id="quoi">
-            <h2>Le Patro, c'est quoi ?</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Mouvement reconnu</h3>
-                    <p>C’est un mouvement de jeunesse reconnu par la Communauté française qui offre un engagement pour les jeunes
-                        et par les jeunes.</p>
-                </div>
-                <div class="card">
-                    <h3>Animateurs bénévoles</h3>
-                    <p>Ce sont des animatrices et animateurs bénévoles qui s’engagent, prennent des responsabilités et participent
-                        à une société plus solidaire.</p>
-                </div>
-                <div class="card">
-                    <h3>Près de 20000 jeunes</h3>
-                    <p>Ce sont près de 20 000 enfants et jeunes qui se retrouvent chaque semaine pour animer ou participer à
-                        des activités multiples.</p>
-                </div>
-                <div class="card">
-                    <h3>Lieu d’épanouissement</h3>
-                    <p>C’est un lieu d’épanouissement où l’on peut découvrir, grandir et devenir un CRACS: une Citoyen Responsable,
-                        Actif, Critique et Solidaire.</p>
-                </div>
-            </div>
-        </section>
-        <section class="patro" id="qui">
-            <h2>Et le Patro, c'est qui ?</h2>
-            <div class="card-container">
-                <div class="card-id">
-                    <img src="img/presidente.jpg" alt="Emy Docquier">
-                    <h4>Emy Docquier</h4>
-                    <h5>Présidente</h5>
-                    <p><a class="mail-address" href="mailto:emy.docquier@student.ulg.ac.be"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>emy.docquier@student.ulg.ac.be</a></p>
-                    <p><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>+32 477 25 99 78</p>
-                </div>
-                <div class="card-id">
-                    <img src="img/tresorier.jpg" alt="Antoine Horevoets">
-                    <h4>Antoine Horevoets</h4>
-                    <h5>Trésorier</h5>
-                    <p><a class="mail-address" href="mailto:antoinehorevoets97@yahoo.be"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>antoinehorevoets97@yahoo.be</a></p>
-                    <p><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>+32 497 36 10 29</p>
-                </div>
-            </div>
-            <div class="animateur-more">
-                <p>Et une vingtaine d’autres animateurs !</p>
-                <a href="equipe.html">Équipe d'animation</a>
-            </div>
-        </section>
-        <section class="map">
-            <div id="map"></div>
-            <script src="js/maps.js"></script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC15JWAh4YDlryq5s2dYwskfKheso68R9w&callback=initMap">
-            </script>
-        </section>
-        <section class="patro contact">
-            <!-- <div class="contact-form">
-                <h3>Posez-nous une question</h3>
-                <form id="contact-form" action="https://formspree.io/patrodemehagne@gmail.com" method="POST">
-                    <input name="name" placeholder="Votre nom" class="" form="contact-form" type="text" autocomplete="name" id="name-input">
-                    <input name="_replyto" class="" placeholder="Votre adresse mail" form="contact-form" type="email" autocomplete="email" id="email-input">
-                    <textarea name="message" class="" placeholder="Votre message" name="" id="message-input" autocomplete="off"></textarea>
-                    <button><span class="icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>Envoyer</button>
-                </form>
-            </div>-->
-            <div class="contact-info">
-                <h3>Contact</h3>
-                <h4><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Email</h4>
-                <a class="email" href="mailto:patrodemehagne@gmail.com">patrodemehagne@gmail.com</a>
-                <h4><span class="icon"><i class="fa fa-compass" aria-hidden="true"></i></span>Adresse</h4>
-                <p>Rue des Coquelicots, 10b<br>4053 Mehagne<br>Belgique</p>
-                <h4><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>Téléphone</h4>
-                <p>+32 477 25 99 78</p>
-            </div>
-        </section>
-    </div>
-    <div class="footer-container">
-        <footer>
-            <div class="footer-nav-container">
-                <nav>
-                    <ul>
-                        <li><a class="page-actuelle" href="index.html">Accueil</a></li>
-                        <li><a href="equipe.html">Équipes d'animation</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                        <li><a href="programmes.html">Programmes</a></li>
-                    </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
-            <div class="footer-2nd-part-container">
-                <div class="footer-2nd-part">
-                    <p>© 2017 Patro de Mehagne</p>
-                    <a href="https://www.facebook.com/PatroDeMehagne/"><span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>PatroDeMehagne</a>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-size-1-desktop has-text-white">Bienvenue au Patro de Mehagne</h1>
+                <h3 class="subtitle ">Patronnés toujours mieux !</h3>
+                <a class="programme-hero-btn" href="programmes.html">Programme du mois</a>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered">
+                <a href="#quoi">Découvrir le Patro</a>
+            </div>
+        </div>
+    </section>
+    <section class="section section-quoi">
+        <div class="container has-text-centered">
+            <h2 class="title" id="quoi">Le Patro, c'est quoi ?</h2>
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child">
+                        <h3 class="subtitle">Mouvement reconnu</h3>
+                        <p>C’est un mouvement de jeunesse reconnu par la Communauté française qui offre un engagement pour les
+                            jeunes et par les jeunes.</p>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child">
+                        <h3 class="subtitle">Animateurs bénévoles</h3>
+                        <p>Ce sont des animatrices et animateurs bénévoles qui s’engagent, prennent des responsabilités et participent
+                            à une société plus solidaire.</p>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child">
+                        <h3 class="subtitle">Près de 20000 jeunes</h3>
+                        <p>Ce sont près de 20 000 enfants et jeunes qui se retrouvent chaque semaine pour animer ou participer
+                            à des activités multiples.</p>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child">
+                        <h3 class="subtitle">Lieu d’épanouissement</h3>
+                        <p>C’est un lieu d’épanouissement où l’on peut découvrir, grandir et devenir un CRACS: une Citoyen Responsable,
+                            Actif, Critique et Solidaire.</p>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
-</body>
+        </div>
+    </section>
+    <section class="section section-qui">
+        <div class="container has-text-centered">
+            <h2 class="title">Et le Patro, c'est qui ?</h2>
+            <div class="columns is-centered">
+                <div class="column card box card-1">
+                    <div class="card-image"><img src="img/Equipe-animation/Grands/Emy Docquier.jpg" alt="Emy Docquier"></div>
+                    <div class="card-content">
+                        <h4>Emy Docquier</h4>
+                        <h5>Présidente</h5>
+                        <p><a class="mail-address" href="mailto:emy.docquier@student.ulg.ac.be"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></span></i>emy.docquier@student.ulg.ac.be</a></p>
+                        <p><span class="icon"><i class="fa fa-phone" aria-hidden="true"></span></i>+32 477 25 99 78</p>
+                    </div>
+                </div>
+                <div class="column card box card-2">
+                    <div class="card-image"><img src="img/Equipe-animation/Conquérants/Antoine Horevoets.jpg" alt="Antoine Horevoets"></div>
+                    <div class="card-content">
+                        <h4>Antoine Horevoets</h4>
+                        <h5>Trésorier</h5>
+                        <p><a class="mail-address" href="mailto:antoinehorevoets97@yahoo.be"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></span></i>antoinehorevoets97@yahoo.be</a></p>
+                        <p><span class="icon"><i class="fa fa-phone" aria-hidden="true"></span></i>+32 497 36 10 29</p>
+                    </div>
+                </div>
 
-</html>
+            </div>
+            <div class="qui-animateur-section">
+                <p>Et une vingtaine d’autres animateurs !</p>
+                <a class="equipe-btn" href="equipe.html">Équipe d'animation</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="map">
+        <div id="map"></div>
+        <script src="js/maps.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC15JWAh4YDlryq5s2dYwskfKheso68R9w&callback=initMap">
+        </script>
+    </section>
+    <section class="section contact" id="contact">
+        <div class="container has-text-centered">
+            <h3 class="title is-spaced">Contact</h3>
+            <h4 class="subtitle"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Email</h4>
+            <a class="email" href="mailto:patrodemehagne@gmail.com">patrodemehagne@gmail.com</a>
+            <h4 class="subtitle"><span class="icon"><i class="fa fa-compass" aria-hidden="true"></i></span>Adresse</h4>
+            <p>Rue des Coquelicots, 10b<br>4053 Mehagne<br>Belgique</p>
+            <h4 class="subtitle"><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>Téléphone</h4>
+            <p>+32 477 25 99 78</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                <ul>
+                    <li><a class="is-active" href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="equipe.html">Équipe d'animation</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="#contact" class="navbar-item">Contact</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                </ul>
+            </nav>
+            <div class="level">
+                <p class="level-left">© 2017 Patro de Mehagne</p>
+                <a class="level-right" href="https://www.facebook.com/PatroDeMehagne/"><span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>PatroDeMehagne</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
